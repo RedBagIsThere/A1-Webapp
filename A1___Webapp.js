@@ -1,15 +1,14 @@
-let x ;
-let y ;
+let x;
+let y;
 
-let h ;
+let h;
 
 function setup() {
   
     createCanvas(500,500);
     x = random(width);
     y = 0;
-    h = 20;
-    
+    h = 20
 }
 
 
@@ -21,15 +20,16 @@ function draw() {
 
     draw_Car(mouseX,height-50,sizeCar);
     draw_Obj(x, y, h);
-    
-    y += 2;
-    
-    if(y>height+h*2){
+
+    y +=2
+
+    if(y>height-h*2){
 
         x = random(width);
         y = 0;
-
+        
     }
+   
 }
 
 function draw_Obj(x, y, size){ // build obj
